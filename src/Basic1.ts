@@ -13,17 +13,15 @@ function getAverage() : number
     return Average;
 }
 
-function getAmountOfPositive() : number 
+function getAmountOfPositive(numbers : number[]) : number 
 {
     let positives : number = 0;
-    let numbersArray: Array<number> = [1, 2, 3, 4, -1, -2]; 
-    for (let index = 0; index < numbersArray.length; index++) 
-    {
-        if(index.valueOf() > 0)
+    numbers.forEach(element => {
+        if(element.valueOf() > 0)
         {
             positives++;
-        }        
-    }
+        }             
+    });
     return positives;
 }
 
