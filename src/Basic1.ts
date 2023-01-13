@@ -27,16 +27,7 @@ function getAmountOfPositive() : number
     return positives;
 }
 
-function sortList(numbers : number[]) : void
+function sortList(numbers : number[]) : number[]
 {
-    for (let index = 0; index < numbers.length; index++) 
-    {
-        if(numbers[index] > numbers[index + 1])
-        {
-            let num : number = 0;
-            num = numbers[index] ;
-            numbers[index] = numbers[index + 1] ;
-            numbers[index + 1] = num ;
-        }
-    }
+   return numbers.sort();
 } 
